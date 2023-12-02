@@ -2,17 +2,17 @@ function BigClick() {
     document.getElementById("textArea").style.fontSize = "24pt";
 }
 
-function radioChange() {
+function radio() {
     const textInput = document.getElementById('textArea');
-    const fancyRadio = document.getElementById('fancyRadio');
-    const boringRadio = document.getElementById('boringRadio');
+    const fancy = document.getElementById('fancy');
+    const boring = document.getElementById('boring');
 
-    if (fancyRadio.checked) {
+    if (fancy.checked) {
         // Set styles for FancyShmancy
         textInput.style.fontWeight = 'bold';
         textInput.style.color = 'blue';
         textInput.style.textDecoration = 'underline';
-    } else if (boringRadio.checked) {
+    } else if (boring.checked) {
         // Set styles for BoringBetty
         textInput.style.fontWeight = 'normal';
         textInput.style.color = 'black';
@@ -20,7 +20,7 @@ function radioChange() {
     }
 }
 
-function mooButtonClick() {
+function mooClick() {
     const textInput = document.getElementById('textArea');
     const words = textInput.value.split(" ");
 
